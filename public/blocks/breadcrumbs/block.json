@@ -1,0 +1,105 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "version": "20241018",
+  "name": "x3p0/breadcrumbs",
+  "title": "Breadcrumbs",
+  "category": "widgets",
+  "description": "Add a breadcrumb trail back to the site homepage. Breadcrumb items appear as placeholders in the editor and will populate with the correct data on the site front end.",
+  "keywords": [
+    "breadcrumb",
+    "trail",
+    "navigation"
+  ],
+  "attributes": {
+    "justifyContent": {
+      "type": "string",
+      "default": ""
+    },
+    "showHomeLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOnHomepage": {
+      "type": "boolean",
+      "default": false
+    },
+    "showTrailStart": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTrailEnd": {
+      "type": "boolean",
+      "default": true
+    },
+    "homePrefix": {
+      "type": "string",
+      "default": ""
+    },
+    "homePrefixType": {
+      "type": "string",
+      "default": ""
+    },
+    "markup": {
+      "type": "string",
+      "default": "rdfa"
+    },
+    "separator": {
+      "type": "string",
+      "default": "chevron"
+    },
+    "separatorType": {
+      "type": "string",
+      "default": "mask"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "html": false,
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalDefaultControls": {
+        "width": true,
+        "color": true
+      }
+    },
+    "color": {
+      "link": true,
+      "gradients": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true,
+        "link": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "textdomain": "x3p0-breadcrumbs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "example": {}
+}
